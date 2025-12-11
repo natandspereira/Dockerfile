@@ -13,7 +13,7 @@ Substitua PORTA_LOCAL e PORTA_CONTAINER conforme necessidade do seu projeto.
 docker build -f Dockerfile.exemplo -t minha-imagem:v1.0 .
 
 ### 🔧 Boas práticas
-Use tags específicas para imagens base, evitando latest.
-Minimize o número de camadas no Dockerfile para otimizar o build.
-Configure permissões adequadas aos arquivos e evite rodar como root quando possível.
-Utilize .dockerignore para evitar incluir arquivos desnecessários na imagem.
+*Use tags específicas para imagens base, evitando latest.
+*Minimize o número de camadas no Dockerfile para otimizar o build.
+*Configure permissões adequadas aos arquivos e evite rodar como root quando possível.
+*Utilize .dockerignore para evitar incluir arquivos desnecessários na imagem.
