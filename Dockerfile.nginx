@@ -1,0 +1,18 @@
+FROM ubuntu 
+
+LABEL maintainer="Natan Pereira"
+LABEL description="Imagem Ubuntu personalizada"
+
+WORKDIR /var/www/html
+
+RUN apt update -y && \ 
+    apt clean -y && \ 
+    apt install -y nginx net-tools iputils-ping && \ 
+    rm -f /etc/nginx/sites-enabled/default && \
+    rm -rf /var/lib/apt/lists/*
+
+COPY exemplo /etc/nginx/sites-enabled/default 
+
+EXPOSE 8080
+
+CMD ["nginx", "-g", "daemon off;"]
