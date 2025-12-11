@@ -1,4 +1,4 @@
-FROM ubuntu 
+FROM ubuntu:latest 
 
 LABEL maintainer="Natan Pereira"
 LABEL description="Imagem Ubuntu personalizada"
