@@ -6,7 +6,8 @@ Este repositório contém uma coleção de **Dockerfiles** para diferentes servi
 - Cada Dockerfile é independente e pode ser construído e executado separadamente.  
 
 ### 🚀 Como usar
-- docker run -d -p PORTA_LOCAL:PORTA_CONTAINER minha-imagem:latest <br>
+- docker run -d -p PORTA_LOCAL:PORTA_CONTAINER minha-imagem:latest (background) <br>
+- docker run -it -p PORTA_LOCAL:PORTA_CONTAINER minha-imagem:latest /bin/bash <br>
 Substitua PORTA_LOCAL e PORTA_CONTAINER conforme necessidade do seu projeto.
 
 ### Build da imagem
