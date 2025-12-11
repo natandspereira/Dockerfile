@@ -10,7 +10,7 @@ Este repositório contém uma coleção de **Dockerfiles** para diferentes servi
 - docker run -it -p PORTA_LOCAL:PORTA_CONTAINER minha-imagem:latest /bin/bash <br>
 Substitua PORTA_LOCAL e PORTA_CONTAINER conforme necessidade do seu projeto.
 
-### Build da imagem
+### 🛠️ Build da imagem
 docker build -f Dockerfile.exemplo -t minha-imagem:v1.0 .
 
 ### 🔧 Boas práticas
